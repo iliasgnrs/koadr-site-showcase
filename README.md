@@ -17,18 +17,22 @@ npm run deploy   # build + deploy dist/ to Cloudflare Pages
 
 ## Editing content
 
-All copy lives in [src/content/site.ts](src/content/site.ts). Points to complete before launch:
+All copy lives in [src/content/site.ts](src/content/site.ts). The values worth checking when things change:
 
-| Placeholder | Where |
+| Value | Where |
 | --- | --- |
-| `HOSTED_APP_URL` (`https://app.koadr.dev`) | URLs block at the top |
-| `GITHUB_URL` | URLs block at the top |
-| `CONTACT_EMAIL` | URLs block at the top |
-| Pro pricing (9.90€/mo, 99€/yr suggested) | `pricing.plans` |
-| Refund + billing FAQ answers | `pricing.faq` |
-| `[COMPANY NAME]`, `[DATE]`, `[CONTACT EMAIL]` | `privacy`, `terms` |
+| `HOSTED_APP_URL`, `GITHUB_URL`, `CONTACT_EMAIL` | URLs block at the top |
+| Legal operator, jurisdiction, last-updated date | `legal` |
+| Pro pricing | `pricing.plans` and `pricing.comparison` |
+| BuddyStat site id | `legal.analytics.siteId` |
 
-Self-host commands in `selfHost.steps` are generic and flagged to be verified against the repo README.
+Legal pages (`privacy`, `terms`) name Scalepath OÜ as operator and use `info@koadr.dev`. Add the registry code and registered address before relying on the terms commercially.
+
+Self-host commands in `selfHost.steps` are generic and flagged to be verified against the product repo README.
+
+## Analytics
+
+BuddyStat loads from [src/components/Analytics.tsx](src/components/Analytics.tsx) only after the consent check. Visitors opt out with the footer control, which stores `koadr-analytics-consent=denied` and reloads so the tracker is unloaded. The prerender step strips the injected script so a snapshot never ships a tracker that bypasses consent.
 
 ## Structure
 
@@ -53,6 +57,10 @@ Self-host commands in `selfHost.steps` are generic and flagged to be verified ag
 | `public/_redirects` | SPA fallback for deep links without a prerendered directory |
 
 When adding a route: add it to `ROUTES` in [`scripts/prerender.mjs`](scripts/prerender.mjs), to `public/sitemap.xml`, and give the page a single `<h1>`. Routes are served with a trailing slash (`/pricing/`); canonicals point at the non-slash form.
+
+## Deployment
+
+Cloudflare Pages project `koadr` (account `b72dfed9…`), serving `koadr.dev` and `www.koadr.dev`. The project is **not** connected to Git: deploys are manual via `npm run deploy`. To switch to auto-deploy, connect this repository in the Pages dashboard with build command `npm run build` and output directory `dist`.
 
 ## Brand assets
 
