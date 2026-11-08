@@ -14,6 +14,7 @@
 [![Vite](https://img.shields.io/badge/Vite-8-646cff)](https://vite.dev/)
 [![Tailwind](https://img.shields.io/badge/Tailwind-v4-38bdf8)](https://tailwindcss.com/)
 [![Hosted on Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-f38020)](https://pages.cloudflare.com/)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 ---
 
@@ -116,8 +117,10 @@ Cloudflare Pages project `koadr`, serving `koadr.dev` and `www.koadr.dev`. Deplo
 
 ---
 
-## License and reuse
+## License
 
-This repository is published as a **portfolio and showcase piece**. The site's copy, design, brand assets and logo are proprietary — please don't reuse them for your own product. The techniques (prerendering pipeline, Tailwind token setup, metadata hooks) are free to learn from.
+Source code is [MIT licensed](LICENSE) — fork it, learn from it, reuse the techniques.
 
-Koadr the product is open source under the MIT license: [iliasgnrs/koadr](https://github.com/iliasgnrs/koadr).
+The **Koadr name, logo and brand assets** in [`brand/`](brand) are trademarks of Scalepath OÜ and are not covered by the MIT license. Don't ship a product that looks like Koadr.
+
+Koadr the product is open source under the same license: [iliasgnrs/koadr](https://github.com/iliasgnrs/koadr).
