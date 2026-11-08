@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="preload" as="image" href="/brand/logo-360.webp" imagesrcset="/brand/logo-360.webp 360w, /brand/logo-720.webp 720w" imagesizes="200px" fetchpriority="high" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="ard" href="/.well-known/ard.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FAFAF9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1A1A1A" media="(prefers-color-scheme: dark)" />
+
+    <title>Koadr — prompt it. build it. ship it.</title>
+    <meta name="description" content="Koadr is an open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps, instantly, inside your browser." />
+    <link rel="canonical" href="https://koadr.dev/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Koadr" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Koadr — prompt it. build it. ship it." />
+    <meta property="og:description" content="Koadr is an open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps, instantly, inside your browser." />
+    <meta property="og:url" content="https://koadr.dev/" />
+    <meta property="og:image" content="https://koadr.dev/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Koadr logo on a dark background with the tagline prompt it. build it. ship it." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Koadr — prompt it. build it. ship it." />
+    <meta name="twitter:description" content="An open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps, in your browser." />
+    <meta name="twitter:image" content="https://koadr.dev/og-image.png" />
+    <meta name="twitter:image:alt" content="Koadr logo on a dark background" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://koadr.dev/#organization",
+            "name": "Koadr",
+            "url": "https://koadr.dev/",
+            "logo": "https://koadr.dev/og-image.png",
+            "description": "Koadr is an open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps inside the browser.",
+            "sameAs": ["https://github.com/iliasgnrs/koadr"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://koadr.dev/#website",
+            "url": "https://koadr.dev/",
+            "name": "Koadr",
+            "description": "An open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps, instantly, inside your browser.",
+            "publisher": { "@id": "https://koadr.dev/#organization" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://koadr.dev/#software",
+            "name": "Koadr",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Web, macOS, Windows, Linux",
+            "url": "https://koadr.dev/",
+            "description": "Browser-based agentic AI workspace. Describe an app in natural language and Koadr writes, runs and deploys a full-stack project using WebContainers. Model-agnostic with 22+ providers and bring-your-own-keys.",
+            "featureList": [
+              "Full-stack development in the browser via WebContainers",
+              "Interactive workbench with editor, terminal, visual diff and live preview",
+              "Smart starter selection for frameworks such as Next.js, Vite and Expo",
+              "One-click deploys to Netlify, Vercel and GitHub Pages",
+              "Git clone and push, snapshots, conflict locking, ZIP export",
+              "22+ AI providers including local models via Ollama and LM Studio",
+              "MCP tools and connectors",
+              "Self-hostable and open source"
+            ],
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Free",
+                "price": "0",
+                "priceCurrency": "EUR",
+                "description": "Hosted at koadr.dev with limited cloud-synced projects, storage, history and deployments."
+              },
+              {
+                "@type": "Offer",
+                "name": "Pro",
+                "price": "9.90",
+                "priceCurrency": "EUR",
+                "description": "Unlimited projects, cloud sync, custom domains and priority support. Billed monthly."
+              },
+              {
+                "@type": "Offer",
+                "name": "Self-host",
+                "price": "0",
+                "priceCurrency": "EUR",
+                "description": "Free and open source. Run Koadr on your own infrastructure."
+              }
+            ],
+            "isAccessibleForFree": true,
+            "license": "https://github.com/iliasgnrs/koadr/blob/main/LICENSE",
+            "sameAs": ["https://github.com/iliasgnrs/koadr"]
+          }
+        ]
+      }
+    </script>
+
+    <script>
+      try {
+        var t = localStorage.getItem('koadr-theme')
+        var dark = t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <h1>Koadr — prompt it. build it. ship it.</h1>
+      <p>Koadr is an open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps, instantly, inside your browser.</p>
+      <p><a href="https://app.koadr.dev">Start now</a> · <a href="https://github.com/iliasgnrs/koadr">Self host on GitHub</a></p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

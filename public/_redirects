@@ -1,0 +1,4 @@
+# Deep links without a matching prerendered directory fall back to the app shell.
+# Real files (llms.txt, sitemap.xml, robots.txt, assets) are always served first
+# by Pages' asset handler, so they never hit this rule.
+/* /index.html 200

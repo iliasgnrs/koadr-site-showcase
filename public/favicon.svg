@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Koadr">
+  <title>Koadr</title>
+  <style>
+    .bg { fill: #FAFAF9 }
+    @media (prefers-color-scheme: dark) { .bg { fill: #1A1A1A } }
+  </style>
+  <rect class="bg" width="64" height="64" rx="14"/>
+  <defs>
+    <linearGradient id="k" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF5A00"/>
+      <stop offset="1" stop-color="#FFA318"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#k)">
+    <path d="M55 32 42 15H31l13 17-13 17h11z"/>
+    <path d="M25 15H14l13 17-13 17h11l13-17z"/>
+  </g>
+</svg>

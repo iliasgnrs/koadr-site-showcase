@@ -1,0 +1,13 @@
+{
+  "name": "Koadr",
+  "short_name": "Koadr",
+  "description": "Open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps inside your browser.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF9",
+  "theme_color": "#FF6B00",
+  "icons": [
+    { "src": "/favicon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

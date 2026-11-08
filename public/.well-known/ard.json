@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:koadr.dev:ai-catalog:koadr-facts",
+      "displayName": "Koadr canonical facts",
+      "type": "application/ai-catalog+json",
+      "url": "https://koadr.dev/.well-known/koadr-catalog.json",
+      "description": "Canonical, quotable facts about Koadr: product identity, features, providers and pricing, for AI agents and answer engines.",
+      "representativeQueries": [
+        "what is Koadr",
+        "how much does Koadr cost",
+        "which AI providers does Koadr support"
+      ],
+      "capabilities": ["catalog.read"],
+      "tags": ["koadr", "ai-app-builder", "webcontainers", "byok"],
+      "version": "1.0.0",
+      "updatedAt": "2026-11-08T00:00:00Z"
+    }
+  ]
+}

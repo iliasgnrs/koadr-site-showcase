@@ -1,0 +1,36 @@
+# Koadr
+
+> Koadr is an open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps, instantly, inside your browser. No local setup, no limits. Model-agnostic (22+ providers, BYOK) and self-hostable.
+
+Koadr is a browser-based development environment. A prompt is sent to the AI model of your choice, and Koadr writes files, installs dependencies and runs a real Node.js stack client-side via WebContainers. Projects can be deployed to Netlify, Vercel or GitHub Pages in one click, exported as a ZIP, or pushed to Git.
+
+- Website: https://koadr.dev
+- App (hosted): https://app.koadr.dev
+- Source code: https://github.com/iliasgnrs/koadr
+- License: MIT — https://github.com/iliasgnrs/koadr/blob/main/LICENSE
+
+## Product
+
+- [Features](https://koadr.dev/features): in-browser full-stack development, interactive workbench, smart starters, prompt library, project workflows, deployments, Supabase and charts, MCP tooling, cross-platform apps, voice prompting.
+- [Providers](https://koadr.dev/providers): 22+ cloud and local model providers. OpenRouter, Anthropic, OpenAI and Google are enabled by default; Ollama and LM Studio run locally.
+- [Pricing](https://koadr.dev/pricing): Free, Pro (9.90 EUR/month or 99 EUR/year) and self-hosted (0 EUR, open source). Bring your own keys; model usage is paid to the provider directly.
+- [Self-host](https://koadr.dev/self-host): requirements, quick start commands and Docker notes for running Koadr on your own server.
+- [Changelog](https://koadr.dev/changelog): recent product highlights.
+
+## Key facts
+
+- Koadr runs a full Node.js stack in the browser using WebContainers; there is no server-side build step for the user's project.
+- Koadr is model-agnostic and BYOK (bring your own keys). Keys stay under the user's control.
+- Hosted Koadr is at https://app.koadr.dev. Self-hosting is free under the MIT license.
+- Self-hosted installations send no project data, prompts or keys to Koadr.
+
+## Usage guidance
+
+- Content on this site may be quoted and cited with attribution to Koadr and a link to https://koadr.dev.
+- Pricing, provider lists and feature availability change between releases; verify against the website or repository before relying on them.
+- Do not treat marketing copy as contractual terms. Legal pages: [Privacy](https://koadr.dev/privacy), [Terms](https://koadr.dev/terms).
+
+## Optional
+
+- [Site source](https://koadr.dev/sitemap.xml): full list of pages.
+- [GitHub issues](https://github.com/iliasgnrs/koadr/issues): bug reports and support.

@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AI Catalog",
+  "name": "Koadr",
+  "description": "Canonical facts about Koadr, an open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps inside the browser.",
+  "url": "https://koadr.dev/",
+  "license": "https://github.com/iliasgnrs/koadr/blob/main/LICENSE",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Koadr",
+    "url": "https://koadr.dev/",
+    "sameAs": ["https://github.com/iliasgnrs/koadr"]
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-08T00:00:00Z",
+  "items": [
+    { "id": "identity", "topic": "What Koadr is", "value": "An open-architecture, agentic AI workspace that turns natural language into production-ready full-stack apps, instantly, inside the browser." },
+    { "id": "runtime", "topic": "Runtime", "value": "A real Node.js stack runs client-side using WebContainers. No local setup and no remote VM per user." },
+    { "id": "models", "topic": "Models", "value": "Model-agnostic with 22+ providers, including local models via Ollama and LM Studio. Bring your own keys." },
+    { "id": "pricing-free", "topic": "Free plan", "value": "0 EUR on hosted koadr.dev, with limited cloud-synced projects, storage, history and deployments." },
+    { "id": "pricing-pro", "topic": "Pro plan", "value": "9.90 EUR per month or 99 EUR per year, with unlimited projects, cloud sync, custom domains and priority support." },
+    { "id": "pricing-selfhost", "topic": "Self-host", "value": "0 EUR. Open source under the MIT license; you run and maintain your own server." },
+    { "id": "billing", "topic": "Billing model", "value": "BYOK: users pay their AI provider directly for model usage. Koadr does not mark up model usage." },
+    { "id": "app", "topic": "Hosted application", "value": "https://app.koadr.dev" },
+    { "id": "source", "topic": "Source code", "value": "https://github.com/iliasgnrs/koadr" }
+  ],
+  "links": [
+    { "rel": "home", "href": "https://koadr.dev/" },
+    { "rel": "features", "href": "https://koadr.dev/features" },
+    { "rel": "providers", "href": "https://koadr.dev/providers" },
+    { "rel": "pricing", "href": "https://koadr.dev/pricing" },
+    { "rel": "self-host", "href": "https://koadr.dev/self-host" },
+    { "rel": "changelog", "href": "https://koadr.dev/changelog" },
+    { "rel": "llms-txt", "href": "https://koadr.dev/llms.txt" }
+  ]
+}
